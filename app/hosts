@@ -1,0 +1,29 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+
+127.0.0.1	collectplus.local
+127.0.0.1	healcloud.local
+127.0.0.1	dev.local
+192.168.40.10   app451.local
+192.168.0.18    pi.local
+
+127.0.0.1 lmlicenses.wip4.adobe.com
+127.0.0.1 lm.licenses.adobe.com
+127.0.0.1 na1r.services.adobe.com
+127.0.0.1 hlrcv.stage.adobe.com
+127.0.0.1 practivate.adobe.com
+127.0.0.1 activate.adobe.com
+192.168.99.100 docker.local
+
+
+
+#HOSTS_EDITOR_START#
+127.0.0.1 asdasdasd.local
+#HOSTS_EDITOR_END#
