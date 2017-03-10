@@ -1,0 +1,21 @@
+{
+  "name": "hosts-editor",
+  "version": "0.1.0",
+  "description": "Editing hosts file from os x tray",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hosts",
+    "file",
+    "editing",
+    "electron",
+    "tray",
+    "app",
+    "os",
+    "x"
+  ],
+  "author": "Laszlo {Lacka} Csele - lacka@codingsans.com",
+  "license": "ISC"
+}
