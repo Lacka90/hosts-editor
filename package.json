@@ -4,8 +4,9 @@
   "description": "Editing hosts file from os x tray",
   "main": "app/app.js",
   "scripts": {
+    "clean": "rm -rf ./build",
     "start": "electron ./app/app.js",
-    "build": "electron-packager . \"Hosts Editor\" --out build --overwrite --production",
+    "build": "electron-packager . \"Hosts-Editor\" --out build --overwrite --production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
