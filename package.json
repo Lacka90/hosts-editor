@@ -2,8 +2,10 @@
   "name": "hosts-editor",
   "version": "0.1.0",
   "description": "Editing hosts file from os x tray",
-  "main": "index.js",
+  "main": "app/app.js",
   "scripts": {
+    "start": "electron ./app/app.js",
+    "build": "electron-packager . \"Hosts Editor\" --out build --overwrite --production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,5 +19,13 @@
     "x"
   ],
   "author": "Laszlo {Lacka} Csele - lacka@codingsans.com",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {  
+    "sudo-prompt": "^6.2.1"
+  },
+  "devDependencies": {
+    "electron": "^1.6.2",
+    "electron-packager": "^8.5.2",
+    "remote": "^0.2.6"
+  }
 }
