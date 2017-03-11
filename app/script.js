@@ -4,11 +4,7 @@ var fs = require('fs');
 var path = require('path');
 var remote = require('electron').remote;
 var dialog = remote.dialog;
-
-var sudo = require('sudo-prompt');
-var options = {
-  name: 'Electron',
-};
+var ipcRenderer = require('electron').ipcRenderer; 
 
 var filePath = path.join(__dirname, 'hosts');
 var fileContent = '';
@@ -68,7 +64,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     fs.writeFileSync(filePath, resultContent);
     const cmd = 'cp ' + filePath + ' ' + '/etc/hosts';
-
-    sudo.exec(cmd, options, function(error, stdout, stderr) {});
+    ipcRenderer.send('runCommand', cmd);
   });
+});
+
+ipcRenderer.on('status', function(event, data) { 
+  if (data.error) {
+    alert(data);
+  }
 });
