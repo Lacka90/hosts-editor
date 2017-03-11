@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
   note.addEventListener('keydown', tabHandler);
 
   try {
-    fileContent = fs.readFileSync(filePath, 'utf-8');
+    fileContent = fs.readFileSync('/etc/hosts', 'utf-8');
 
     var subContent = hostsRegexp.exec(fileContent);
     if (!subContent) {
