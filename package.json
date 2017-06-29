@@ -21,12 +21,12 @@
   ],
   "author": "Laszlo {Lacka} Csele - lacka@codingsans.com",
   "license": "ISC",
-  "dependencies": {  
-    "sudo-prompt": "^6.2.1"
+  "dependencies": {
+    "electron-prebuilt": "^1.4.13",
+    "sudo-prompt": "^7.1.0"
   },
   "devDependencies": {
-    "electron": "^1.6.2",
-    "electron-packager": "^8.5.2",
+    "electron-packager": "^8.7.2",
     "remote": "^0.2.6"
   }
 }

@@ -8,6 +8,7 @@ const options = {
 };
 
 let tray = null;
+app.dock.hide();
 app.on('ready', () => {
   tray = new Tray(path.join(__dirname, 'iconTemplate.png'));
   const contextMenu = Menu.buildFromTemplate([
